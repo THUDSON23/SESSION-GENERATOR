@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Gifted_Tech,
+    default: ᎻႮᎠͲᎬᏟᎻ,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -20,13 +20,13 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function GIFTED_MD_PAIR_CODE() {
+        async function 𝙱𝙾𝚃𝚂𝙾𝙽_𝙼𝙳_𝙿𝙰𝚁𝙸𝙽𝙶_𝙲𝙾𝙳𝙴() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Gifted_Tech = Gifted_Tech({
+            let Pair_Code_By_ᎻႮᎠ_ͲᎬᏟᎻ = Gifted_Tech({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -43,8 +43,8 @@ router.get('/', async (req, res) => {
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Gifted_Tech.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Gifted_Tech.ev.on("connection.update", async (s) => {
+            Pair_Code_By_ᎻႮᎠ_ͲᎬᏟᎻ.ev.on('creds.update', saveCreds)
+            Pair_Code_By_ᎻႮᎠ_ͲᎬᏟᎻ.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -54,7 +54,7 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
+               let session = await Pair_Code_By_Hud_Tech.sendMessage(Pair_Code_By_Hud_Tech.user.id, { text: '' + b64data });
 
                let GIFTED_MD_TEXT = `
 *_Pair Code Connected by WASI TECH*
@@ -80,11 +80,11 @@ _Don't Forget To Give Star To My Repo_`
  
 
         await delay(100);
-        await Pair_Code_By_Gifted_Tech.ws.close();
+        await Pair_Code_By_Hud_Tech.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    GIFTED_MD_PAIR_CODE();
+                    𝙱𝙾𝚃𝚂𝙾𝙽_𝙼𝙳_𝙿𝙰𝚁𝙸𝙽𝙶 𝙲𝙾𝙳𝙴();
                 }
             });
         } catch (err) {
@@ -95,6 +95,6 @@ _Don't Forget To Give Star To My Repo_`
          }
         }
     }
-    return await GIFTED_MD_PAIR_CODE()
+    return await 𝙱𝙾𝚃𝚂𝙾𝙽_𝙼𝙳_𝙿𝙰𝚁𝙸𝙽𝙶 𝙲𝙾𝙳𝙴()
 });
 module.exports = router
